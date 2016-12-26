@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Welcome to this demo!</h3>
+
+  <p>
+    This demo app was built to make it possible that everybody can reproduce the issue with Google Maps and ionic 2
+  </p>
+  <p>
+    Do the following:
+  </p>
+  <ol>
+    <li>Press the button below. You should see a Google Map as expected - fine!</li>
+    <li>Go back to this page. You can use the backwards-button in the navbar at the top of the page.</li>
+    <li>Press the button below again. Now you should only see a grey area instead of a map. Nevertheless you should be able to see the markers.</li>
+  </ol>
+  <p>
+    <!--<button ion-button color="primary" menuToggle>Toggle Menu</button>-->
+    <button ion-button color="primary" (click)="goToMap()">Show Google Maps</button>
+  </p>
+
+</ion-content>
